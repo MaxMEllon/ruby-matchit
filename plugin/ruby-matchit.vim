@@ -17,7 +17,11 @@
 " Since brave programmers use indentation, this will work for most of you, I
 " hope. At least, it works for me. ;-)
 " }}}
-function! s:Ruby_Matchit()
+
+let s:save_cpo = &cpo
+set cpo&vim
+
+function! matchit#ruby_matchit()
 
     " use default matching for parenthesis, brackets and braces:
     if strpart(getline("."), col(".")-1, 1) =~ '(\|)\|{\|}\|\[\|\]'
@@ -64,7 +68,5 @@ function! s:Ruby_Matchit()
 
 endfunction
 
-nnoremap <buffer> \\\\\ %
-nnoremap <buffer> % :call <SID>Ruby_Matchit()<CR>
-
-
+let &cpo = s:save_cpo
+unlet s:save_cpo
