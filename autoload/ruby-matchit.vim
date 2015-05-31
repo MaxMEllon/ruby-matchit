@@ -7,7 +7,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 nnoremap <buffer> \\\\\ %
-nnoremap <buffer> % :call <SID>Ruby_Matchit(<CR>)
+nnoremap <buffer> % :call <SID>matchit#ruby_matchit(<CR>)
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
