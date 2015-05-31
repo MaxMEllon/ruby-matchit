@@ -21,8 +21,7 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! matchit#ruby_matchit()
-
+function! ruby_matchit#exec()
   " use default matching for parenthesis, brackets and braces:
   if strpart(getline("."), col(".")-1, 1) =~ '(\|)\|{\|}\|\[\|\]'
     normal \\\\\
@@ -65,7 +64,6 @@ function! matchit#ruby_matchit()
       endif
     endwhile
   endif
-
 endfunction
 
 let &cpo = s:save_cpo
