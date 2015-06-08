@@ -49,8 +49,7 @@ function! ruby_matchit#exec()
         break
       endif
     endwhile
-  elseif curr_word =~ '\<\(if\|unless\|elsif\|else\|case\|when\|while\|'
-        \.'until\|def\|\|module\|class\)\>'
+  elseif curr_word =~ '\<\(if\|unless\|elsif\|else\|do\|case\|when\|while\|until\|def\|\|module\|class\|context\|it\|xit\|describe\)\>'
     while 1
       normal j
       if strlen(matchstr(getline("."), "^\\s*")) == spaces
