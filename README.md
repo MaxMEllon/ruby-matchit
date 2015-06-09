@@ -1,5 +1,5 @@
 # ruby_matchit (vim-plugin)
-Desprecated. Use [this](https://github.com/kshenoy/vim-matchit_ruby) instead.
+Quote : [ruby-matchit](http://www.vim.org/scripts/script.php?script_id=290) quote
 
 # Description
 
