@@ -1,5 +1,5 @@
 # ruby_matchit (vim-plugin)
-Quote : [ruby-matchit](http://www.vim.org/scripts/script.php?script_id=290) quote
+Quote : [ruby-matchit](http://www.vim.org/scripts/script.php?script_id=290)
 
 # Description
 
