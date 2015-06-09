@@ -8,7 +8,10 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 command! -nargs=0 RubyMatchit call g:ruby_matchit#exec()
-nnoremap <silent> % :RubyMatchit<CR>
+
+aug RubyMatchit
+  au FileType ruby nnoremap <silent> % :RubyMatchit<CR>
+aug END
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
