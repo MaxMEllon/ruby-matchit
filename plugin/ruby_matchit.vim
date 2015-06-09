@@ -11,7 +11,7 @@ command! -nargs=0 RubyMatchit call g:ruby_matchit#exec()
 
 aug RubyMatchit
   au!
-  au FileType ruby nnoremap <silent> % :RubyMatchit<CR>
+  au FileType ruby nnoremap <buffer><silent>% :RubyMatchit<CR>
 aug END
 
 let &cpo = s:save_cpo
