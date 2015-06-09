@@ -9,6 +9,8 @@ set cpo&vim
 
 command! -nargs=0 RubyMatchit call g:ruby_matchit#exec()
 
+nnoremap <buffer> __%__ %
+
 aug RubyMatchit
   au!
   au FileType ruby nnoremap <silent> % :RubyMatchit<CR>

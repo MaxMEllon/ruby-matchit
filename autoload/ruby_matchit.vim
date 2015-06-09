@@ -24,7 +24,8 @@ set cpo&vim
 function! ruby_matchit#exec()
   " use default matching for parenthesis, brackets and braces:
   if strpart(getline("."), col(".")-1, 1) =~ '(\|)\|{\|}\|\[\|\]'
-    normal \\\\\
+    normal __%__
+    return
   endif
 
   normal ^
